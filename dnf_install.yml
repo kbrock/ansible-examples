@@ -1,0 +1,7 @@
+- name: Install Packages
+  hosts: all
+  tasks:
+    - name: upgrade all packages
+      dnf:
+        name: "*"
+        state: latest
