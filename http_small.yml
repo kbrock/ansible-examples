@@ -1,0 +1,8 @@
+- name: Install Packages for small Environment
+  hosts: all
+  tasks:
+    - name: install
+      dnf:
+        name:
+          - httpd
+        state: latest

@@ -1,0 +1,9 @@
+- name: Install Packages for large environment
+  hosts: all
+  tasks:
+    - name: install
+      dnf:
+        name:
+          - httpd
+          - haproxy
+        state: latest
